@@ -1,4 +1,4 @@
 #AddressFinder
 
 ##Screenshot
-![funnymaplemanager](https://cloud.githubusercontent.com/assets/23380926/20705199/62a42cbe-b665-11e6-9c80-06c165a2442d.png)
+![addressfinder](https://cloud.githubusercontent.com/assets/23380926/20706462/d3fb3984-b66a-11e6-8f66-facdd866ebda.png)
