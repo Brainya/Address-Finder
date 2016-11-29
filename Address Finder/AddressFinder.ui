@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CAddressFinder</class>
+ <widget class="QMainWindow" name="CAddressFinder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>776</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Address Finder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="addressfinder.qrc">
+    <normaloff>:/AddressFinder/Resources/search.png</normaloff>:/AddressFinder/Resources/search.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2" rowspan="2" colspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Add Item</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="4">
+           <widget class="QLineEdit" name="leAOB"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Name</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="leAddressName">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>AOB</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Size</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QSpinBox" name="sbSize">
+         <property name="maximum">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Offset</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="sbOffset">
+         <property name="maximum">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="pbAddItem">
+         <property name="toolTip">
+          <string>Add</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="addressfinder.qrc">
+           <normaloff>:/AddressFinder/Resources/Create.png</normaloff>:/AddressFinder/Resources/Create.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pbAttach">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="toolTip">
+       <string>Attach</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="addressfinder.qrc">
+        <normaloff>:/AddressFinder/Resources/Computer 16x16.png</normaloff>:/AddressFinder/Resources/Computer 16x16.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pbScan">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="toolTip">
+       <string>Scan</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="addressfinder.qrc">
+        <normaloff>:/AddressFinder/Resources/Find.png</normaloff>:/AddressFinder/Resources/Find.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pbSaveList">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="toolTip">
+       <string>Save</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="addressfinder.qrc">
+        <normaloff>:/AddressFinder/Resources/Save.png</normaloff>:/AddressFinder/Resources/Save.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pbOpenList">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="toolTip">
+       <string>Open</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="addressfinder.qrc">
+        <normaloff>:/AddressFinder/Resources/Folder.png</normaloff>:/AddressFinder/Resources/Folder.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="4">
+     <widget class="QTreeWidget" name="twAddressFinder">
+      <property name="contextMenuPolicy">
+       <enum>Qt::ActionsContextMenu</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="indentation">
+       <number>0</number>
+      </property>
+      <property name="uniformRowHeights">
+       <bool>true</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Result</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Offset</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Size</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>AOB</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">QStatusBar::item {border: none;}</string>
+   </property>
+  </widget>
+  <action name="actionDeleteSelectedItem">
+   <property name="icon">
+    <iconset resource="addressfinder.qrc">
+     <normaloff>:/AddressFinder/Resources/Delete.png</normaloff>:/AddressFinder/Resources/Delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionCopyAddressNameSelectedItem">
+   <property name="icon">
+    <iconset resource="addressfinder.qrc">
+     <normaloff>:/AddressFinder/Resources/Clipboard.png</normaloff>:/AddressFinder/Resources/Clipboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy Name</string>
+   </property>
+  </action>
+  <action name="actionCopyResultSelectedItem">
+   <property name="icon">
+    <iconset resource="addressfinder.qrc">
+     <normaloff>:/AddressFinder/Resources/Clipboard.png</normaloff>:/AddressFinder/Resources/Clipboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy Result</string>
+   </property>
+  </action>
+  <action name="actionCopyAOBSelectedItem">
+   <property name="icon">
+    <iconset resource="addressfinder.qrc">
+     <normaloff>:/AddressFinder/Resources/Clipboard.png</normaloff>:/AddressFinder/Resources/Clipboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy AOB</string>
+   </property>
+  </action>
+  <action name="actionClearSelectedItem">
+   <property name="icon">
+    <iconset resource="addressfinder.qrc">
+     <normaloff>:/AddressFinder/Resources/Delete.png</normaloff>:/AddressFinder/Resources/Delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="addressfinder.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbAttach</sender>
+   <signal>clicked()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbScan</sender>
+   <signal>clicked()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbSaveList</sender>
+   <signal>clicked()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>23</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbOpenList</sender>
+   <signal>clicked()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbAddItem</sender>
+   <signal>clicked()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>756</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>265</x>
+     <y>492</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionClearSelectedItem</sender>
+   <signal>triggered()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QAction_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCopyAOBSelectedItem</sender>
+   <signal>triggered()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QAction_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCopyAddressNameSelectedItem</sender>
+   <signal>triggered()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QAction_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDeleteSelectedItem</sender>
+   <signal>triggered()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QAction_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCopyResultSelectedItem</sender>
+   <signal>triggered()</signal>
+   <receiver>CAddressFinder</receiver>
+   <slot>QAction_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>QPushButton_Clicked()</slot>
+  <slot>QAction_Triggered()</slot>
+ </slots>
+</ui>

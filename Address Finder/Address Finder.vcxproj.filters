@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{fc0b7132-8f2b-4530-bcb3-a945d54ad1fb}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{8250cdce-0972-40da-a5ee-f08c086ce0e2}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Classes\CScan">
+      <UniqueIdentifier>{a01cda9e-7d72-4be3-b3be-c2d6d8009913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\AddressFinder">
+      <UniqueIdentifier>{b4eb4b99-95bc-413b-a336-9f417ddd97d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\ProcessList">
+      <UniqueIdentifier>{6bafb282-966b-4969-8b4a-3fcb4d39c96e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addressfinder.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addressfinder.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_addressfinder.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressFinder.cpp">
+      <Filter>Form Files\AddressFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CScan.cpp">
+      <Filter>Classes\CScan</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ProcessList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessList.cpp">
+      <Filter>Form Files\ProcessList</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="addressfinder.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ProcessList.h">
+      <Filter>Form Files\ProcessList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AddressFinder.h">
+      <Filter>Form Files\AddressFinder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AddressFinder.ui">
+      <Filter>Form Files\AddressFinder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ProcessList.ui">
+      <Filter>Form Files\ProcessList</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CScan.h">
+      <Filter>Classes\CScan</Filter>
+    </ClInclude>
+    <ClInclude Include="Include.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_AddressFinder.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ProcessList.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AddressFinder.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

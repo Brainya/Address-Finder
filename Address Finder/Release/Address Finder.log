@@ -1,0 +1,30 @@
+﻿Build started 8/29/2013 3:31:46 PM.
+     1>Project "C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Address Finder\Address Finder.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Uic'ing AddressFinder.ui...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.5\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.5\include\QtCore /IC:\Qt\4.8.5\include\QtGui /IC:\boost\boost_1_53_0 /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AddressFinder.cpp CScan.cpp GeneratedFiles\Release\moc_ProcessList.cpp GeneratedFiles\Release\moc_addressfinder.cpp ProcessList.cpp main.cpp
+         AddressFinder.cpp
+         CScan.cpp
+         moc_ProcessList.cpp
+         moc_addressfinder.cpp
+         ProcessList.cpp
+         main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Win32\Release\\Address Finder.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.5\lib /LIBPATH:C:\boost\boost_1_53_0\stage\lib kernel32.lib user32.lib shell32.lib uuid.lib ole32.lib advapi32.lib ws2_32.lib gdi32.lib comdlg32.lib oleaut32.lib imm32.lib winmm.lib winspool.lib ws2_32.lib ole32.lib user32.lib advapi32.lib qtmain.lib QtCore.lib QtGui.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Address Finder.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Win32\Release\Address Finder.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Win32\Release\Address Finder.lib" /MACHINE:X86 Release\AddressFinder.res
+         Release\AddressFinder.obj
+         Release\CScan.obj
+         Release\qrc_addressfinder.obj
+         Release\moc_addressfinder.obj
+         Release\moc_ProcessList.obj
+         Release\main.obj
+         Release\ProcessList.obj
+         Address Finder.vcxproj -> C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Win32\Release\Address Finder.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Win32\Release\\Address Finder.exe;#1" /manifest "Release\Address Finder.exe.intermediate.manifest"
+     1>Done Building Project "C:\Users\User\Documents\Visual Studio 2012\Projects\Address Finder\Address Finder\Address Finder.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:23.53

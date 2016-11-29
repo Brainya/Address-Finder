@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="AddressFinder">
+    <file>Resources/search.ico</file>
+    <file>Resources/Clipboard.png</file>
+    <file>Resources/Computer 16x16.png</file>
+    <file>Resources/Create.png</file>
+    <file>Resources/Delete.png</file>
+    <file>Resources/Find.png</file>
+    <file>Resources/search.png</file>
+    <file>Resources/Folder.png</file>
+    <file>Resources/Save.png</file>
+  </qresource>
+</RCC>

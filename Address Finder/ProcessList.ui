@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CProcessList</class>
+ <widget class="QDialog" name="CProcessList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>270</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Process List</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pbRefresh">
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pbAttach">
+     <property name="text">
+      <string>Attach</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QTreeWidget" name="twProcessList">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="indentation">
+      <number>0</number>
+     </property>
+     <property name="uniformRowHeights">
+      <bool>true</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PID</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="addressfinder.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbRefresh</sender>
+   <signal>clicked()</signal>
+   <receiver>CProcessList</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbAttach</sender>
+   <signal>clicked()</signal>
+   <receiver>CProcessList</receiver>
+   <slot>QPushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>twProcessList</sender>
+   <signal>itemDoubleClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>CProcessList</receiver>
+   <slot>QTreeWidget_ItemDoubleClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>QPushButton_Clicked()</slot>
+  <slot>QTreeWidget_ItemDoubleClicked()</slot>
+ </slots>
+</ui>
